@@ -2,20 +2,21 @@
 <html>
 <head>
   <title>Pragprog Books Online Store</title>
-  <%= stylesheet_link_tag "scaffold" %>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<body id="store">
+<body id="store" class='<%= controller.controller_name %>' >
   <div id="banner">
     <%= image_tag("logo.png")%>
     <%= @page_title || "Pragmatic BookSheef" %>
   </div>
   <div id="columns">
     <div id="side">
-      <p>Now is:</p>
-      <p><%= Time.now %></p>
+      <div id="cart">
+        <%= render @cart %>
+      </div>
+
       <a href="http://www....">Home</a><br />
       <a href="http://www..../fag">Questions</a><br />
       <a href="http://www..../news">News</a><br />
