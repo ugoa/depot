@@ -17,7 +17,7 @@ class OrdersControllerTest < ActionController::TestCase
     LineItem.create(cart_id: cart, product_id: products(:ruby))
     
     get :new
-#    assert_response :success
+#   assert_response :success
   end
 
   test "should create order" do
@@ -25,7 +25,7 @@ class OrdersControllerTest < ActionController::TestCase
       post :create, order: { address: @order.address, email: @order.email, name: @order.name, pay_type: @order.pay_type }
     end
 
-#    assert_redirected_to order_path
+#   assert_redirected_to order_path
   end
 
   test "should show order" do
