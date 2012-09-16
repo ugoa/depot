@@ -36,7 +36,7 @@ Depot::Application.configure do
   config.assets.debug = true
 
   # How I want the mail to be delivered
-  config.action_mailer.delivery_method = :smtp | :sendmail | :test
+  config.action_mailer.delivery_method = :smtp
 
   config.action_mailer.smtp_settings = {
     address:            "smtp.gmail.com",
