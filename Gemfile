@@ -37,5 +37,7 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'debugger'
 
+gem 'will_paginate', '~> 3.0'
+
 #gem 'therubyracer', :platforms => :ruby
 gem 'therubyracer', require: "v8"
