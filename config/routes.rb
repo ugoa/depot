@@ -1,4 +1,18 @@
 Depot::Application.routes.draw do
+<<<<<<< HEAD
+=======
+
+  get 'admin' => "admin#index"
+
+  controller :sessions do
+    get 'login' => :new
+    post 'login' => :create
+    delete 'logout' => :destroy
+  end
+
+  resources :users
+
+>>>>>>> 0527c5d... Finished Iteration I2: Authentication Users.
   resources :orders
 
   resources :line_items
