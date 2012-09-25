@@ -9,7 +9,7 @@
   <body id="store" class='<%= controller.controller_name %>' >
     <div id="banner">
       <%= image_tag("logo.png")%>
-      <%= @page_title || "Pragmatic BookSheef" %>
+      <%= @page_title || t('.title') %>
     </div>
     <div id="columns">
       <div id="side">
@@ -18,12 +18,11 @@
             <%= render @cart %>
           <% end %>
         <% end %>
-        
 
-        <a href="http://www....">Home</a><br />
-        <a href="http://www..../fag">Questions</a><br />
-        <a href="http://www..../news">News</a><br />
-        <a href="http://www..../contact">Contact Us</a><br />
+        <a href="http://www...."><%= t('.home') %></a><br />
+        <a href="http://www..../fag"><%= t('.questions') %> </a><br />
+        <a href="http://www..../news"><%= t('.news') %> </a><br />
+        <a href="http://www..../contact"><%= t('.contact') %> </a><br />
 
         <% if session[:user_id] %>
           <ul>
