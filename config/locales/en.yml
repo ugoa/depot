@@ -17,6 +17,9 @@ en:
       questions: "Questions"
       news:      "News"
       contact:   "Contact"
+      orders:    "Orders"
+      products:  "Products"
+      users:     "Users"
 
   store:
     index:
