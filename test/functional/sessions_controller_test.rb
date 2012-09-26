@@ -6,6 +6,7 @@ class SessionsControllerTest < ActionController::TestCase
     assert_response :success
   end
 
+<<<<<<< HEAD
   test "should get create" do
     get :create
     assert_response :success
@@ -16,6 +17,8 @@ class SessionsControllerTest < ActionController::TestCase
     assert_response :success
   end
 
+=======
+>>>>>>> topic
   test "should login" do
     dave = users(:one)
     post :create, name: dave.name, password: 'secret'
